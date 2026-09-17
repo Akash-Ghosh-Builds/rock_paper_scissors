@@ -1,0 +1,391 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.homepage {
+    background-image: url(img/gif.gif);
+    background-size: cover;
+}
+
+.homepage-layer {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.734);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 50px;
+    height: 10vh;
+}
+
+.logo {
+    color: white;
+    font-size: 3rem;
+    font-family: 'mogra';
+    margin: auto 0px;
+}
+
+.logo span {
+    font-size: 3.5rem;
+    color: rgb(254, 80, 49);
+}
+
+.navbtn {
+    padding: 3px 5px;
+    margin: auto 0px;
+    background-color: rgb(254, 80, 49);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.navbtn:hover {
+    color: rgb(254, 80, 49);
+    background-color: white;
+    font-size: 1.3rem;
+}
+
+.homebtn {
+    margin-left: 1050px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 100px;
+}
+
+.gamename {
+    font-size: 4rem;
+    font-family: 'oi';
+    color: white;
+    padding: 20px 0px;
+}
+
+.gamename span {
+    color: rgb(254, 80, 49);
+    font-size: 4.5rem;
+}
+
+.cachyline {
+    color: white;
+    font-family: 'mogra';
+    font-size: 2rem;
+    padding: 5px 0px 40px 0px;
+}
+
+.cachyline span {
+    color: rgb(254, 80, 49);
+    font-size: 2.1rem;
+}
+
+.playnowbtn {
+    height: 60px;
+    width: 170px;
+    font-size: 1.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(254, 80, 49);
+    border-radius: 30px;
+    margin: 40px auto;
+    border: 6px rgb(254, 80, 49);
+    box-shadow: 0 0 40px rgb(254, 80, 49);
+}
+
+.playnowbtn:hover {
+    background-color: rgb(254, 80, 49);
+    color: white;
+    border: 6px white;
+    box-shadow: 0 0 40px white;
+}
+
+.gameinterfacepage {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.gamepagelayer {
+    background-color: rgb(52, 51, 51);
+    height: 100vh;
+    width: 100vw;
+}
+
+.scoreboardname {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 100px;
+}
+
+.namebox1 {
+    color: white;
+    font-size: 2rem;
+    margin-top: auto;
+    padding-left: 562px;
+}
+
+.namebox2 {
+    color: white;
+    font-size: 2rem;
+    margin-top: auto;
+    padding-right: 525px;
+}
+
+.scoreboard {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px;
+}
+
+.box1 {
+    height: 50px;
+    width: 170px;
+    font-size: 2rem;
+    font-family: 'Poppins';
+    background-color: rgb(254, 80, 49);
+    color: white;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 2px solid white;
+}
+
+.box2 {
+    height: 50px;
+    width: 170px;
+    font-size: 2rem;
+    font-family: 'Poppins';
+    background-color: rgba(255, 255, 255, 0.056);
+    color: rgb(254, 80, 49);
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 2px solid white;
+}
+
+.gamepagebtns {
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gamepagebtn {
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    font-size: 1.7rem;
+    font-family: 'mogra';
+    background-color: rgb(254, 80, 49);
+    color: white;
+    margin-left: 50px;
+    border: none;
+}
+
+.gamepagebtn:hover {
+    color: rgb(254, 80, 49);
+    background-color: white;
+}
+
+.herosection {
+    height: 50vh;
+    margin: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagecontainer {
+    position: relative;
+    height: 450px;
+    width: 450px;
+}
+
+.imagecontainer img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.imagecontainer img.active {
+    opacity: 1;
+}
+
+.bigimg {
+    height: 400px;
+    width: 400px;
+}
+
+.parmanentimg img {
+    height: 300px;
+    width: 300px;
+}
+
+.choicepage {
+    height: 100vh;
+    width: 100vw;
+}
+
+.choicepagelayer1 {
+    background-color: rgba(52, 51, 51, 0.518);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choicecontainer {
+    height: 50vh;
+    width: 45vw;
+    background-image: url(img/background.jpg);
+    border-radius: 15px;
+}
+
+.choiceh1 {
+    height: 7.5vh;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.herocontainer {
+    height: 35vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.297);
+}
+
+.herocontainer button:hover {
+    height: 110px;
+    width: 110px;
+}
+
+.herocontainer button {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+
+}
+
+.herocontainer button img {
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 100px;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+}
+
+.backbtn {
+    font-size: 2rem;
+    font-family: 'mogra';
+    color: white;
+    background-color: rgb(254, 80, 49);
+    width: 150px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 1vh;
+}
+
+.backbtn:hover {
+    background-color: white;
+    color: rgb(254, 80, 49);
+}
+
+.hidden {
+    display: none;
+}
+.resultwinpage{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+.winpagelayer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.animation{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.winresult{
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'mogra';
+    color: white;
+}
+
+.procced{
+    height: 50px;
+    width: 150px;
+    font-size: 2rem;
+    font-family: 'mogra';
+    background-color: rgb(254, 80, 49);
+    color: white;
+    border-radius: 20px;
+}
+.procced:hover{
+    background-color: white;
+    color: rgb(254, 80, 49);
+}
+.resultdrawpage{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+section .resultlosspage{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.738);   
+}
+.losspagelayer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.emoji img{
+    height: 250px;
+    width: 250px;
+}
+.statement{
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'mogra';
+    color: rgb(254, 80, 49);
+    padding: 20px 0px;
+}

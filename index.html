@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriMove</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mogra&family=Oi&family=Poppins&family=Rubik+Wet+Paint&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="homepage" id="homepage">
+        <div class="homepage-layer">
+            <nav>
+                <div class="logo">Tri<span>Move</span></div>
+                <button class="homebtn navbtn" id="homebtnho">Home</button>
+                <button class="playbtn navbtn" id="playbtnho">Play</button>
+            </nav>
+            <main class="content">
+                <div class="gamename">Rock <span>Paper</span> Scissor</div>
+                <div class="cachyline"><span>Only one</span> wins. It’s not <span>always you.</span></div>
+                <button class="playnowbtn" id="playnowbtn">Play Now</button>
+            </main>
+        </div>
+    </section>
+    <section class="gameinterfacepage hidden" id="gamepage">
+        <div class="gamepagelayer">
+            <nav>
+                <div class="logo">Tri<span>Move</span></div>
+                <button class="homebtn navbtn" id="homebtnch">Home</button>
+                <button class="playbtn navbtn" id="playbtnch">Play</button>
+            </nav>
+            <section class="scoreboardname">
+                <div class="namebox1">Opponent</div>
+                <div class="namebox2">You</div>
+            </section>
+            <section class="scoreboard">
+                <div class="box1" id="score1">0</div>
+                <div class="box2" id="score2">0</div>
+            </section>
+            <section class="herosection">
+                <div class="image imagecontainer">
+                    <img src="img/rock-left.png" class="active" id="rl">
+                    <img src="img/papar-left.png" class="bigimg" id="pl">
+                    <img src="img/secissors-left.png" id="sl">
+                </div>
+                <div class="parmanentimg"><img src="img/vs.png" alt=""></div>
+                <div class="imagecontainer">
+                    <img src="img/rock-right.png" class="active" id="rr">
+                    <img src="img/papar-right.png" class="bigimg" id="pr">
+                    <img src="img/secissors-right.png" id="sr">
+                </div>
+            </section>
+            <div class="gamepagebtns">
+                <button class="endbtn gamepagebtn" id="endbtn">End</button>
+                <button class="startbtn gamepagebtn" id="startbtn">Start>></button>
+            </div>
+        </div>
+    </section>
+    <section class="choicepage hidden" id="choicepage">
+        <div class="choicepagelayer1">
+            <div class="choicecontainer">
+                <div class="choiceh1">Choice is your's</div>
+                <div class="herocontainer">
+                    <button><img src="img/download (4).jpg" class="randomnum" id="rockbtn"></button>
+                    <button><img src="img/download (3).jpg" class="randomnum" id="paparbtn"></button>
+                    <button><img src="img/download (2).jpg" class="randomnum" id="scissorbtn"></button>
+                </div>
+                <div class="back">
+                    <button class="backbtn" id="backbtn">Back</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="resultwinpage hidden" id="winpage">
+        <section class="winpagelayer">
+            <main class="animation">
+                <div class="resultgif"><img src="img/wingif.gif"></div>
+                <div class="winresult">You Won the match</div>
+                <div class="resultgif"><img src="img/wingif.gif"></div>
+            </main>
+            <button class="procced" id="proccedbtnwin">Home</button>
+        </section>
+    </section>
+    <section class="resultdrawpage hidden" id="drawpage">
+        <section class="winpagelayer">
+            <main class="animation">
+                <div class="resultgif"><img src="img/wingif.gif"></div>
+                <div class="winresult">Ooh , Its a draw</div>
+                <div class="resultgif"><img src="img/wingif.gif"></div>
+            </main>
+            <button class="procced" id="proccedbtndraw">Home</button>
+        </section>
+    </section>
+    <section class="resultlosspage hidden" id="losspage">
+        <section class="losspagelayer">
+            <div class="emoji"><img src="img/sad.gif" alt="" class="sad"></div>
+            <div class="statement">ohh! Better luck next time</div>
+            <button class="procced" id="proccedbtnloss">Home</button>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
